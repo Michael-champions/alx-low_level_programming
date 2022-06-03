@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 /**
  * main - print all entry here
- * Return: always 0 (success)
+ * Return: 0 if positive
  */
 int main(void)
 {
