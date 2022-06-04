@@ -23,9 +23,9 @@ int main(void)
 
 	else if (lstdgt == 0)
 
-		printf("the last digit of %d is %d and is 0\n",  n, lstdgt);
+		printf("last digit of %d is %d and is 0\n",  n, lstdgt);
 
 	else if (lstdgt > 5)
 
-		printf("the last digit of %d is %d and is greater than 5\n", n, lstdgt);
+		printf("last digit of %d is %d and is greater than 5\n", n, lstdgt);
 	return (0); }
