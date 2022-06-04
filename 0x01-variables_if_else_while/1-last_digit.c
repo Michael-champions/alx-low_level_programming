@@ -13,6 +13,8 @@ int main(void)
 
 	n = rand() - RAND_MAX / 2;
 
+	lstdgt = n % 10;
+
 	if (lstdgt != 0 && lstdgt < 6)
 
 	{
