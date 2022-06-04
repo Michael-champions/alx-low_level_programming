@@ -7,24 +7,23 @@
  */
 int main(void)
 {
-	int n, Istdgt;
+	int n, lstdgt;
 
 	srand(time(0));
 
 	n = rand() - RAND_MAX / 2;
 
-	if (Istdgt != 0 && Istdgt < 6)
+	if (lstdgt != 0 && lstdgt < 6)
 
 	{
-		printf("last digit of  %d is %d and is less than 6 not 0\n", n, Istdgt);
+		printf("last digit of  %d is %d and is less than 6 not 0\n", n, lstdgt);
 	}
 
 	else if (Istdgt == 0)
 
-		printf("the last digit of %d is %d and is 0\n",  n, Istdgt);
+		printf("the last digit of %d is %d and is 0\n",  n, lstdgt);
 
-	else if (Istdgt > 5)
+	else if (lstdgt > 5)
 
-		printf("the last digit of %d is %d and is greater than 5\n", n, Istdgt);
-	return (0);
-}
+		printf("the last digit of %d is %d and is greater than 5\n", n, lstdgt);
+	return (0); }
