@@ -10,7 +10,6 @@ int main(void)
 {
 	int number;
 
-	number = n;
 
 	for (number = 0; number < 10; number++)
 	{
