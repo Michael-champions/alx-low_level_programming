@@ -6,7 +6,7 @@
  * Return: 0 if positive
  *
  */
-int main(0)
+int main(void)
 {
 	int ch = '0';
 
