@@ -12,9 +12,10 @@ int main(void)
 
 	while (ch <= '9')
 	{
-		putcha(ch);
+		putchar(ch);
 	}
 	putchar(10);
+
 	return (0);
 
 }
