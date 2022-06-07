@@ -3,7 +3,7 @@
 /**
  * print_alphabet_x10 -prints 10 times the alphabet, in lowercase, \n
  *
- * Return: 0 if true
+ * Return: 0 if if success
  */
 
 void print_alphabet_x10(void)
