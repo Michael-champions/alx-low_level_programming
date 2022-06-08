@@ -11,36 +11,40 @@ void times_table(void)
 	int a;
 	int b;
 	int sum;
+	int product;
+	int row;
 
 	for (a = 0; a <= 9; b++)
 	{
 		for (b = 0; b <= 9; b++)
 		{
 			sum = a * b;
-			if (b != 0)
-
-			{
-				_putchar(',');
-				_putchar(',');
-			}
+			product = sum / 10;
+			row = product % 10;
 
 			if (b == 0)
+
 			{
 				_putchar('0');
 			}
-			else if (sum >= 10)
-			{
-				_putchar((sum / 10) + '0');
-				_putchar((sum % 10) + '0');
-			}
 
-			else if ((sum < 10) && (b != 0))
-
+			else if (sum < 10)
 			{
+				_putchar(',');
 				_putchar(' ');
-				_putchar((sum % 10) + '0');
+				_putchar(' ');
+				_putchar(row + '0');
+			}
+			else
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(product + '0');
+				_putchar(row + '0');
+			}
+			{
+				_putchar(10);
 			}
 		}
-			_putchar(10);
 	}
 }
