@@ -9,7 +9,7 @@
 void print_alphabet_x10(void)
 {
 	int alphabet = 0;
-	int alphabet1 = a;
+	int alphabet1 = 'a';
 
 
 	while (alphabet < 10)
