@@ -5,6 +5,8 @@
  *
  * @n: is the int that will use for the argument of the function
  *
+ * Description: prints the last digit of a number
+ *
  * Return: 0
  */
 int print_last_digit(int n)
