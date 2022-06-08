@@ -7,7 +7,7 @@
  *
  * Description: prints the last digit of a number
  *
- * Return: 0
+ * Return: interger
  */
 int print_last_digit(int n)
 {
