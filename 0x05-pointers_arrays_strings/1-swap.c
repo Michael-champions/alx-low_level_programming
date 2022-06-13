@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * void swap_int - swap the valuses of two integers a and b
+ * swap_int - swap the valuses of two integers a and b
  *
  * @a: declaration of a and paramters for the function swap_int
  *
