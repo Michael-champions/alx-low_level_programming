@@ -1,1 +1,1 @@
-et_to_98(int *n);
+reset_to_98(int *n);
