@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * _puts - prints a string
- *
- * @str: string being printed
+ * _puts - > this is a function that puts
+ * @str: a paramiter to put function
  *
  * Return: always 0
  */
-
 void _puts(char *str)
 {
 	for (; *str != '\0'; str++)
