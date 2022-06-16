@@ -4,28 +4,24 @@
 /**
  * reverse_array - Reverses contents of an array of integers
  *
- * @a: Pointer to first element
+ * @a:array
  *
- * @n: is the number of elements of the array
+ * @n: size of thr element of the array in bytes
+ *
+ * Description: return the required result
  *
  * Return: always 0
  */
 
 void reverse_array(int *a, int n)
 {
-	int x = 0;
-	int y = n - 1;
-	int tmp;
+	int i = 0;
+	int x;
 
-	while (x < y)
+	for (i = 0; i < n--; i++)
 	{
-		tmp = a[x];
-
-		a[x] = a[y];
-
-		a[y] = tmp;
-		x++;
-
-		y++;
+		x = a[i];
+		a[i] = a[n];
+		a[n] = x;
 	}
 }
