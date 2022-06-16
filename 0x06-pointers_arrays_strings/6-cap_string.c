@@ -5,11 +5,11 @@
 #include <stddef.h>
 
 /**
- * cap_string - capitalize all string
+ * cap_string - capitalizes all words of a string
  *
- * @n: pointer
+ * @n: input value
  *
- * Return: always 0
+ * Return: string
  */
 char *cap_string(char *n)
 {
