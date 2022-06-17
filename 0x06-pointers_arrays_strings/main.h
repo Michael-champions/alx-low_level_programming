@@ -9,5 +9,5 @@ char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *n);
 char *rot13(char *s);
-
+void print_number(int n);
 #endif
