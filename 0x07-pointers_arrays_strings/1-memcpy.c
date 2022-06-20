@@ -16,8 +16,8 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int goods;
 
-	for (goods = 0; goods < size; goods++)
-		*(dest + goods) = *(dest + src);
+	for (goods = 0; goods < n; goods++)
+		*(dest + goods) = *(src + goods);
 
 	return (dest);
 }
