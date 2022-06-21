@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#define NULL 0
 
 /**
  * _strsp - function that gets the length of a prefix substring
@@ -13,17 +12,12 @@
  */
 char *_strchr(char *s, char c);
 {
-	while (*s != '\0')
+	int i;
+
+	for (i = 0; s[i] >= '\0'; i++)
 	{
-		if (*s == c)
-		{
-			return (s);
-		}
-		else
-			s++;
+		if (s[i] == c)
+			return (s + i);
 	}
-	if (*s == c)
-		return (s);
-	else
-		return ('\0');
+	return (NULL);
 }
