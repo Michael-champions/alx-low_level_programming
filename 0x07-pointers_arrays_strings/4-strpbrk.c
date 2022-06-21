@@ -13,19 +13,18 @@
 
 char *_strpbrk(char *s, char *accept);
 {
-	int i, n;
+	int x = o, i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (s[x] != '\0')
 
-	{
-		for (n = 0; accept[n] != '\0'; n++)
-
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			if (s[i] == accept[n])
-				return (s + i);
+			if (s[x] == accept[i])
+			{
+				s = &s[x];
+				return (s);
+			}
+			i++;
 		}
-	}
-
 	return (NULL);
-
 }
