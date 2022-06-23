@@ -19,10 +19,10 @@ int _sqrt_recursion(int n, int i)
 	}
 	else if (square == n)
 	{
-		return (1);
+		return (i);
 	}
 	else
 	{
-		return (_sqrt_recursion(n, i * i));
+		return (_sqrt_recursion(n, i + i));
 	}
 }
