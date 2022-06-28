@@ -13,18 +13,18 @@
  */
 int main(int argc, char *argv)
 {
-	int i, error;
+	int i, err;
 
-	error = 0;
+	err = 0;
 	if (argc != 3)
 	{
 		printf("%s\n", "error");
-		error = 1;
+		err = 1;
 	}
 	else
 	{
 		i = atoi(argv[1]) * atoi(argv[2]);
 		printf("%i\n", i);
 	}
-	return (error);
+	return (err);
 }
