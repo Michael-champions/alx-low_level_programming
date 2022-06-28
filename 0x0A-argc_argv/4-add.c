@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 #include <stdlib.h>
-
 #include <ctype.h>
 /**
- * main - print message here
+ * _isnumber - checks if string is a number
  *
- * @argc: argument count
- * @argv: argument vector
+ * @s: string
+ *
  *
  * Return: always 0
  */
-int main(int argc, char **argv)
+
+int _isnumber(char *s)
 {
 	int i, check, d;
 
