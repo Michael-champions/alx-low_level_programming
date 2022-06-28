@@ -13,7 +13,7 @@
  */
 int main(int argc, char **argv)
 {
-	int i, err;
+	int n, err;
 
 	err = 0;
 	if (argc != 3)
@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		i = atoi(argv[1]) * atoi(argv[2]);
-		printf("%i\n", i);
+		n = atoi(argv[1]) * atoi(argv[2]);
+		printf("%i\n", n);
 	}
 	return (err);
 }
