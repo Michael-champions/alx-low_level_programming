@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 	{
 		while (numb < argc)
 		{
-			printf("%s\n", argv[count]);
+			printf("%s\n", argv[numb]);
 			numb++;
 		}
 	}
