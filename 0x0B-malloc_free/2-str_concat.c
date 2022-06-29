@@ -1,0 +1,55 @@
+#include "main<F11>.h"
+
+#include <stdio.h>
+
+/**
+ * *str_concat - function that concatenates two strings
+ *
+ * @s1: first string
+ *
+ * @s2:string to add to end of of first string
+ *
+ * Return:pointer should point to a newly
+ * allocated space in memory which contains
+ * the contents of s1, followed by the contents of s2,
+ *  and null terminated
+ */
+char *str_concat(char *s1, char *s2)
+{
+	unsigned int size1 = 0, size2 = 0;
+	char *ptr, *ret;
+
+	ptr = s1;
+
+	if (s1)
+	{
+		while (*ptr++)
+			size1++;
+	}
+	else
+	{
+		s1 = "";
+	}
+	ptr = s2;
+	if (s2)
+	{
+		while (*ptr++)
+			size2++
+	}
+	else
+	{
+		s2 = "";
+	}
+	ret = malloc(size1 + size2 + 1);
+	if (!ret)
+	{
+		return (NULL);
+	}
+	ptr = ret;
+	while (*s1)
+	{
+		*ptr++ = *s2++;
+	}
+	*ptr = 0;
+	return (ret);
+}
