@@ -1,4 +1,4 @@
-#include "main<F11>.h"
+#include "main.h"
 
 #include <stdio.h>
 
