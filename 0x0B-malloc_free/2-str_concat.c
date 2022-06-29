@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 
 #include <stdio.h>
 
@@ -34,7 +35,7 @@ char *str_concat(char *s1, char *s2)
 	if (s2)
 	{
 		while (*ptr++)
-			size2++
+			size2++;
 	}
 	else
 	{
