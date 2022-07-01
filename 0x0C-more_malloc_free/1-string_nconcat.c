@@ -31,7 +31,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	char *nul = "";
 
-
 	if (s1 == NULL)
 		s1 = nul;
 
@@ -39,7 +38,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s2 = nul;
 
 	l1 = 0, l2 = 0;
-	while (*(s + 11))
+	while (*(s1 + l1))
 		l1++;
 
 	while (*(s2 + l2))
