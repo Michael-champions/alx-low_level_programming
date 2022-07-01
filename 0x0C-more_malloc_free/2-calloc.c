@@ -53,5 +53,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (0);
 
 	_memset(p, 0, size * nmemb);
-	return (0);
+	return (p);
 }
