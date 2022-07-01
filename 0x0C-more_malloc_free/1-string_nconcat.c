@@ -4,7 +4,6 @@
 
 #include <stdlib.h>
 
-#include <string.h>
 
 /**
  * string_nconcat -  concatenates two strings
@@ -27,8 +26,11 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int l1, l2, i, j;
+
 	char *s;
+
 	char *nul = "";
+
 
 	if (s1 == NULL)
 		s1 = nul;
