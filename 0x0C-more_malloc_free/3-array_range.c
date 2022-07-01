@@ -22,7 +22,7 @@ int *array_range(int min, int max)
 		return (0);
 
 	if (max > min)
-		int size, i, j;
+		size = max - min + 1;
 	else if (max == min)
 		size = 2;
 
