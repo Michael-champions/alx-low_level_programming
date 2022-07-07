@@ -16,19 +16,20 @@ int sum_them_all(const unsigned int n, ...)
 {
 	va_list nums;
 
-	unsigned int index sum = 0;
+	unsigned int i;
 
-	va_start(nums, n);
+	int sum = 0;
 
-
-	for (index = 0; index < n; index++)
+	if (n == 0)
 	{
-		printf("%d", va_arg(nums, int));
-
-		if (index != (n - 1) && separator != NULL)
-
-			printf("%s", separator);
+		return (0);
 	}
+
+	va_start(sums, n);
+	for (i = 0; i < n; i++)
+		sum += va_arg(sums, unsigned int);
+
+	va_end(sums);
 
 	return (sum);
 }
