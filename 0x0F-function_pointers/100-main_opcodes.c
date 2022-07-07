@@ -5,11 +5,11 @@
 /**
  * main - a program that prints the opcodes of its own main function
  *
- * @argc: argument counts
+ * @argc: counts of args
  *
- * @argv: array of pointers to args, in order given
+ * @argv: array of args
  *
- * Return: 0 on success, 1 if argc not right, 2 if bytes is negative
+ * Return: int
  */
 
 int main(int argc, char **argv)
@@ -17,7 +17,7 @@ int main(int argc, char **argv)
 	int a, size;
 	char *add;
 
-	if (argc != 0)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
