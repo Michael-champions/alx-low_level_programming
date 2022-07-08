@@ -14,22 +14,24 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list nums;
+	va_list number;
+	int sum;
+	unsigned int x;
 
-	unsigned int i;
-
-	int sum = 0;
+	x = 0;
 
 	if (n == 0)
 	{
 		return (0);
 	}
+	sum = 0;
+	va_start(number, n);
 
-	va_start(sums, n);
-	for (i = 0; i < n; i++)
-		sum += va_arg(sums, unsigned int);
-
-	va_end(sums);
-
+	while (x < n)
+	{
+		sum = sum + va_arg(num, int);
+		x++;
+	}
+	va_end(number);
 	return (sum);
 }
