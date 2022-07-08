@@ -72,7 +72,7 @@ void print_all(const char * const format, ...)
 		{ "c", print_char },
 		{ "s", print_str },
 		{NULL, NULL}
-	}
+	};
 
 	va_start(list, format);
 
