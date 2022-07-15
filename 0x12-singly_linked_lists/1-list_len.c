@@ -9,13 +9,14 @@
 
 size_t list_len(const list_t *h)
 {
-	const list_t *temp = h;
-	int elements_counter = 0;
+	size_t numele;
 
-	while (temp != NULL)
+	numele = 0;
+
+	while (h != NULL)
 	{
-		elements_counter++;
-		temp = temp->next;
+		numele++;
+		h = h->next;
 	}
-	return (elements_counter);
+	return (numele);
 }
