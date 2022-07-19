@@ -27,6 +27,10 @@ listint_t *find_listint_loop_pl(listint_t *head)
 	return (NULL);
 }
 
+
+
+
+
 /**
  * print_listint_safe - prints a linked list, even if it
  * has a loop
