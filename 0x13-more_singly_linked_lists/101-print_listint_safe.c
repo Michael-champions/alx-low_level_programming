@@ -4,7 +4,7 @@
 /**
  * print_listint_safe - print list
  * @head: head node
- * describtion: a function that prints a listint_t linked list.
+ *
  * Return: amount of nodes in list
  */
 size_t print_listint_safe(const listint_t *head)
